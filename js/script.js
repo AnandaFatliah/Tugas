@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Show stored name when page loads
   const savedName = localStorage.getItem("visitorName");
   if (savedName) {
     showWelcomeName(savedName);
   }
 
-  // Store Name Button
   const storeButton = document.getElementById("storeNameButton");
   if (storeButton) {
     storeButton.addEventListener("click", storeName);
   }
 
-  // Form Submission
+  // untuk form
   const form = document.getElementById("messageForm");
   if (form) {
     form.addEventListener("submit", function (e) {
